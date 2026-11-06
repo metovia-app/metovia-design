@@ -1,0 +1,31 @@
+# Dependencies and generated caches
+node_modules/
+.venv/
+.cache/
+
+# Temporary files and logs
+/tmp/
+/temp/
+/logs/
+*.tmp
+*.log
+*.swp
+*~
+
+# Local environment and credentials (keep the documented example)
+.env
+.env.*
+!.env.example
+/.secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Private source research and machine-specific settings
+/.private-research/
+/.metovia-source.local.json
+/.vscode/*.local.json
+/.idea/workspace.xml
+.DS_Store
+Thumbs.db
