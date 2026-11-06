@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 2,
+  "bundleVersion": "0.1.1",
+  "sourceLabel": "Bestehende Metovia-Webanwendung",
+  "auditDate": "2026-11-06",
+  "provenance": "Interne Revisionsnachweise werden nicht öffentlich mitgeliefert.",
+  "references": [
+    {
+      "id": "S01",
+      "topic": "Gemeinsames UI-Paket"
+    },
+    {
+      "id": "S02",
+      "topic": "CMS-Bibliotheken"
+    },
+    {
+      "id": "S03",
+      "topic": "Konventionen der gemeinsamen UI"
+    },
+    {
+      "id": "S04",
+      "topic": "Globale CMS-Styles",
+      "identifier": "globals.css"
+    },
+    {
+      "id": "S05",
+      "topic": "Globale Magazinstyles",
+      "identifier": "globals.css"
+    },
+    {
+      "id": "S06",
+      "topic": "CMS-Tokens und Geometrie",
+      "identifier": "cms-tokens.css"
+    },
+    {
+      "id": "S07",
+      "topic": "Gemeinsame Tokens und Artikelprosa",
+      "identifier": "styles.css"
+    },
+    {
+      "id": "S08",
+      "topic": "CMS-Themeprovider",
+      "identifier": "cms-theme.tsx"
+    },
+    {
+      "id": "S09",
+      "topic": "Theme-Umschaltung",
+      "identifier": "theme-toggle.tsx"
+    },
+    {
+      "id": "S10",
+      "topic": "CMS-Rootlayout und Schrift",
+      "identifier": "layout.tsx"
+    },
+    {
+      "id": "S11",
+      "topic": "Magazin-Rootlayout",
+      "identifier": "layout.tsx"
+    },
+    {
+      "id": "S12",
+      "topic": "Magazinrenderer",
+      "identifier": "magazine.tsx"
+    },
+    {
+      "id": "S13",
+      "topic": "CMS-Interaktionen und Motion",
+      "identifier": "cms-motion.css"
+    },
+    {
+      "id": "S14",
+      "topic": "Card-Komponente",
+      "identifier": "card.tsx"
+    },
+    {
+      "id": "S15",
+      "topic": "Button-API",
+      "identifier": "button.tsx"
+    },
+    {
+      "id": "S16",
+      "topic": "Kompakte Erstellaktion",
+      "identifier": "create-button.tsx"
+    },
+    {
+      "id": "S17",
+      "topic": "Listenheader",
+      "identifier": "list-header.tsx"
+    },
+    {
+      "id": "S18",
+      "topic": "Bestehende Designkonventionen"
+    },
+    {
+      "id": "S19",
+      "topic": "CMS-Shell und responsive Navigation",
+      "identifier": "shell.tsx"
+    },
+    {
+      "id": "S20",
+      "topic": "Navigationskonfiguration",
+      "identifier": "navigation-config.ts"
+    },
+    {
+      "id": "S21",
+      "topic": "Command Palette",
+      "identifier": "command-palette.tsx"
+    },
+    {
+      "id": "S22",
+      "topic": "Befehlsregistry",
+      "identifier": "command-registry.ts"
+    },
+    {
+      "id": "S23",
+      "topic": "Artikelübersicht als Referenzlayout",
+      "identifier": "page.tsx"
+    },
+    {
+      "id": "S24",
+      "topic": "Artikelfilter",
+      "identifier": "article-list-controls.tsx"
+    },
+    {
+      "id": "S25",
+      "topic": "Listentabelle und Auswahl",
+      "identifier": "list-table.tsx"
+    },
+    {
+      "id": "S26",
+      "topic": "Listenansichten und Tabs",
+      "identifier": "list-views.tsx"
+    },
+    {
+      "id": "S27",
+      "topic": "Formular- und Seitenbausteine",
+      "identifier": "page-ui.tsx"
+    },
+    {
+      "id": "S28",
+      "topic": "Formulardialoge",
+      "identifier": "cms-dialog.tsx"
+    },
+    {
+      "id": "S29",
+      "topic": "Löschbestätigung",
+      "identifier": "confirm-delete-dialog.tsx"
+    },
+    {
+      "id": "S30",
+      "topic": "Artikeleigenschaften",
+      "identifier": "article-properties.css"
+    },
+    {
+      "id": "S31",
+      "topic": "Artikelstatus",
+      "identifier": "article-status.tsx"
+    },
+    {
+      "id": "S32",
+      "topic": "Statusanzeige",
+      "identifier": "status-badge.tsx"
+    },
+    {
+      "id": "S33",
+      "topic": "Newsletter-Vorlagenverwaltung",
+      "identifier": "newsletter-templates.tsx"
+    },
+    {
+      "id": "S34",
+      "topic": "Newsletter-Vorschau",
+      "identifier": "newsletter-preview.tsx"
+    },
+    {
+      "id": "S35",
+      "topic": "Einladungsmail-Vorlage"
+    },
+    {
+      "id": "S36",
+      "topic": "Passwortwiederherstellungs-Vorlage"
+    },
+    {
+      "id": "S37",
+      "topic": "CMS-Komponentenkonventionen"
+    },
+    {
+      "id": "S38",
+      "topic": "Magazin-Bibliotheken"
+    },
+    {
+      "id": "S39",
+      "topic": "CMS-CSS-Verarbeitung"
+    },
+    {
+      "id": "S40",
+      "topic": "Magazin-CSS-Verarbeitung"
+    },
+    {
+      "id": "S41",
+      "topic": "Artikelworkspace und Scrolling",
+      "identifier": "article-workspace.css"
+    },
+    {
+      "id": "S42",
+      "topic": "CMS-spezifische Arbeitskonventionen"
+    },
+    {
+      "id": "S43",
+      "topic": "Magazin-spezifische Arbeitskonventionen"
+    },
+    {
+      "id": "S44",
+      "topic": "Gemeinsame Buildwerkzeuge"
+    },
+    {
+      "id": "S45",
+      "topic": "Aktionsdropdown",
+      "identifier": "actions-menu.tsx"
+    },
+    {
+      "id": "S46",
+      "topic": "CMS-Portallayout",
+      "identifier": "layout.tsx"
+    },
+    {
+      "id": "S47",
+      "topic": "Artikeltabelle und Titel-Link",
+      "identifier": "article-table.tsx"
+    }
+  ]
+}
