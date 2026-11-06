@@ -1,11 +1,11 @@
-# Proposed und Future
+# Recommended und Future
 
 Alle Einträge sind Planungsentscheidungen vom 06.11.2026. Es gibt in diesem
 Auftrag keine Produktimplementierung dieser Vorschläge. Belege und Befund-IDs
 stehen im [Audit](design-audit.md); der belegte Bestand steht unter
 [Current](current-standards.md).
 
-## Proposed: priorisierte Verbesserungen
+## Recommended: priorisierte Verbesserungen
 
 | ID | Priorität | Vorschlag / Bezug | Voraussetzung für spätere Übernahme als Current |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ es behauptet keinen bereits abgeschlossenen Accessibility-Audit.
 | F04 | Eigenständige öffentliche Magazinwebsite | Komponenten-/Tokenverantwortung und Versionierung erst anhand des späteren Projekts festlegen |
 | F05 | Gemeinsame ausführbare Token-/Komponentendistribution | Erst bei konkretem Wiederverwendungsbedarf planen; aktuell bleiben Styles und Komponenten im Monorepo |
 
-## Von Proposed zu Current
+## Von Recommended zu Current
 
 Für eine übernommene Änderung Problem, betroffenen Scope, Begründung,
 Komponente und tatsächliche Verifikation öffentlich festhalten. Genaue

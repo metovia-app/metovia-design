@@ -1,10 +1,11 @@
 # Arbeit in metovia-design
 
-Dieses Repository enthält öffentliche Designrichtlinien und das Skill-Paket unter
-`.agents/skills/metovia-design`. Die gemeinsam ausgelieferten Referenzen bleiben
-innerhalb dieses Ordners, damit eine versionierte Kopie eigenständig funktioniert.
+Dieses Repository enthält öffentliche Designrichtlinien und vier Skills unter
+`.agents/skills/`. Die vier Skill-Ordner und `_shared` bilden einen gemeinsam
+installierten Referenzverbund. Jeder Skill ist unabhängig aufrufbar; die Links
+bleiben innerhalb dieses Verbunds. Paketversion und erwartete Skills: `skills.json`.
 
-- Bestehende Produktkomponenten und Tokens haben Vorrang. `Current`, `Proposed`
+- Bestehende Produktkomponenten und Tokens haben Vorrang. `Current`, `Recommended`
   und `Future` getrennt halten; CMS und öffentliches Magazin unterscheiden.
 - Öffentliche Audits enthalten fachliche Befunde und neutrale Themenreferenzen.
   Keine privaten Repositoryadressen, Quellrevisionen, Repository-IDs,
@@ -16,7 +17,10 @@ innerhalb dieses Ordners, damit eine versionierte Kopie eigenständig funktionie
   autorisieren keine Änderungen an anderen Repositorys, Organisationen oder Hosting.
 - Bei aktualisierten Standards Audit, Themenregister und `reference-index.json`
   konsistent halten. Historische Befunde nicht als aktuell verifiziert ausgeben.
-- Vor Abschluss `node scripts/validate.mjs` und `git diff --check` ausführen.
+- Externe Ideen am Einsatzort belegen; Quellen und Lizenzprüfung in `_shared`
+  dokumentieren. Keine fremden Dateien oder Code ohne konkrete Lizenzprüfung kopieren.
+- Vor Abschluss `node scripts/validate.mjs`, bei geänderter Prüfungslogik auch
+  `node scripts/test-validation.mjs`, und `git diff --check` ausführen.
   Keine Produktbuilds oder Zugriffe auf private Quellrepositorys für diese Prüfung.
 - Veröffentlichungsprüfungen nur mit Kategorien und Dateinamen dokumentieren,
   ohne entfernte sensible Werte im Bericht oder PR-Text erneut offenzulegen.

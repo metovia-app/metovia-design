@@ -1,6 +1,6 @@
 ---
 name: metovia-design
-description: Bestehende Metovia-UI weiterentwickeln oder auf Designkonsistenz prüfen. Nutze belegte CMS- und Magazinstandards, vorhandene Komponenten und einen versionierten Design-Audit; nicht für unabhängige Websites oder Hosting-Migrationen.
+description: Metovia-Oberflächen aller Module gestalten oder weiterentwickeln. Nutze vorhandene Komponenten, Tokens, Layout- und Accessibilitystandards sowie Apple- und Kowalski-Prinzipien; nicht für unabhängige Websites oder Hosting-Migrationen.
 ---
 
 # Metovia Design
@@ -10,10 +10,21 @@ ist ihre dokumentierte Referenz, kein Ersatz für den Code des bearbeiteten Stan
 
 ## Bei UI-Arbeit
 
+Lies die [plattformweiten Guidelines](references/platform-guidelines.md),
+[gemeinsamen Prinzipien](../_shared/principles.md),
+[Komponentenstandards](../_shared/components.md) und
+[Accessibility](../_shared/accessibility.md). Nutze die dort belegten R01/R02 für
+Hierarchie/Typografie, R04 für Feedback und R05 für Motionzweck und Häufigkeit.
+Diese Webanpassungen dienen allen Metovia-Modulen; sie sind keine Apple-Optik.
+
 Lies [Current-Standards](references/current-standards.md) und die für die Aufgabe
 relevanten Komponenten im Zielcheckout. Lies dessen `AGENTS.md` und prüfe den aktuellen Implementierungsstand.
 Unterscheide CMS und öffentliches Magazin. Verwende vorhandene Komponenten und
 Tokens des jeweiligen Bereichs; Artikelverwaltung ist die Referenz für CMS-Listen.
+Für andere Module deren tatsächlichen Bestand prüfen; die CMS-Baseline ist kein
+Beleg für deren Implementierung. Liegt kein autorisierter Zielcheckout vor,
+nur die gegebenen Fakten verwenden und die fehlende Implementierungsprüfung
+als Grenze nennen. Praktische Anwendung: [Einstellungen](references/settings-example.md).
 
 Das [Themenregister](references/sources.md) und
 [reference-index.json](references/reference-index.json) ordnen die öffentlichen
@@ -27,7 +38,7 @@ Belegte Abweichungen im Ergebnis nennen und bei Bedarf als neuen Audit erfassen.
 Bei Konflikten zwischen Dokumentation und Implementierung den Unterschied
 erklären, bevor eine bestehende Designentscheidung ersetzt wird.
 
-[Proposed und Future](references/decisions.md) sind keine implementierten Regeln.
+[Recommended und Future](references/decisions.md) sind keine implementierten Regeln.
 Empfehlungen nur im beauftragten Umfang umsetzen und ihre Promotion zu `Current`
 erst mit Implementierungsbeleg und passender Verifikation dokumentieren.
 
@@ -35,6 +46,9 @@ Prüfe betroffene Zustände: normal, Hover, Fokus, gedrückt, deaktiviert, ausst
 Fehler und leer; außerdem Light/Dark, schmale Ansicht und reduzierte Bewegung,
 soweit für den Bereich vorhanden. Dialoge behalten Fokusführung und Schutz
 ungespeicherter Eingaben. Icons und Farben ersetzen keine verständlichen Labels.
+Neue und überarbeitete Oberflächen haben WCAG 2.2 AA als Abnahmeziel; fehlende
+Konformitätsnachweise des Bestands klar benennen. Gib Änderungen am vorhandenen
+Muster, Begründung, Status und konkrete Abnahmetests aus, nicht nur Stilvorschläge.
 
 ## Bei einem Audit
 

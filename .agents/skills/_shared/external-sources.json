@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-06",
+  "sources": [
+    { "id": "apple-hig", "url": "https://developer.apple.com/design/human-interface-guidelines/", "license": "No redistribution of original material" },
+    { "id": "kowalski", "url": "https://github.com/emilkowalski/skills", "license": "MIT; ideas analyzed, no files copied" },
+    { "id": "apple-review", "url": "https://github.com/dickwu/apple-design-skill", "license": "No license file found; no content copied" },
+    { "id": "apple-marketing", "url": "https://github.com/SudewaJay/apple-design-skill", "license": "MIT; ideas analyzed, no files copied" },
+    { "id": "wcag", "url": "https://www.w3.org/WAI/standards-guidelines/wcag/", "license": "Official reference; no documents copied" },
+    { "id": "react", "url": "https://react.dev/reference/react/useEffect", "license": "Official reference; original examples only" },
+    { "id": "three", "url": "https://threejs.org/manual/pages/responsive.html", "license": "Official reference; no code copied" },
+    { "id": "mdn", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API", "license": "Official reference; no code copied" }
+  ]
+}

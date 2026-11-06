@@ -5,20 +5,25 @@ enthält keine privaten Quelladressen, Revisionsnachweise oder Zugriffsdaten.
 
 ## Paket und Versionierung
 
-Die bereinigte Paketversion ist **0.1.1**. Das vollständige Paket ist
-`.agents/skills/metovia-design/`, einschließlich aller `references/`.
-Alle Laufzeitreferenzen bleiben innerhalb dieses Ordners.
+Die Paketversion ist **0.2.0**. Die Installation besteht aus den vier Ordnern
+`metovia-design`, `metovia-ui-review`, `metovia-motion`, `metovia-landing` und
+`_shared` unter demselben `.agents/skills/`-Verzeichnis. Jeder Skill ist unabhängig
+aufrufbar; seine statischen Referenzen dürfen in benachbarten Paketordnern liegen.
+Der gesamte Referenzverbund ist die portable Installationsgrenze.
 
 Für eine reproduzierbare Installation einen geprüften Stand des öffentlichen
-Designrepositorys festhalten, den ganzen Skill-Ordner in das Zielprojekt kopieren
-und dort versionieren. Eine vorhandene Installation erst vergleichen und bewusst
+Designrepositorys festhalten, alle fünf genannten Ordner samt ihren Dateien in
+das Zielprojekt kopieren und dort versionieren. Eine vorhandene Installation erst vergleichen und bewusst
 aktualisieren; andere Skills und AGENTS-Dateien nicht überschreiben.
 Die Installationsversion bezeichnet das Designpaket, nicht eine bestimmte
 Revision der bestehenden Metovia-Webanwendung.
 
 Codex lädt repositorybezogene Skills unter `.agents/skills` und unterstützt
 Symlinks; siehe die [offizielle Skill-Dokumentation](https://learn.chatgpt.com/docs/build-skills).
-Eine kopierte Installation ist unabhängig von lokalen Nachbarverzeichnissen.
+Eine vollständig kopierte Installation ist unabhängig vom ursprünglichen
+Designcheckout. Ein einzelner kopierter Skill-Ordner ohne seine Nachbarreferenzen
+ist unvollständig; automatische Installer für Einzelskills dürfen deshalb nicht
+ungeprüft verwendet werden.
 
 ## AGENTS-Ergänzung im Zielprojekt
 
@@ -28,10 +33,12 @@ lesen und folgenden Abschnitt sinngemäß ergänzen:
 ```markdown
 ## Metovia Design
 
-Bei UI-Änderungen `.agents/skills/metovia-design/SKILL.md` verwenden.
+Für UI-Gestaltung metovia-design, für Audits metovia-ui-review, für Animationen
+metovia-motion und für Produktpräsentationen metovia-landing verwenden. Die
+SKILL.md-Dateien liegen unter `.agents/skills/` in gleichnamigen Ordnern.
 Bestehende Komponenten und Tokens des betroffenen Produktbereichs haben Vorrang.
 Dokumentierten Designstand mit der aktuellen Implementierung abgleichen;
-Current, Proposed und Future getrennt halten. Interne Herkunftsnachweise nicht
+Current, Recommended und Future getrennt halten. Interne Herkunftsnachweise nicht
 in das öffentliche Skill-Paket übernehmen.
 ```
 
@@ -72,4 +79,17 @@ Diese Anleitung führt keine Migration oder Hostingänderung aus.
 
 Den dokumentierten Designstand als historische Bestandsaufnahme verwenden,
 nicht als unabhängig verifizierten aktuellen Produktstand. Fehlende Nachweise
-nennen; neue Komponenten oder Tokens bleiben unbelegt bzw. `Proposed`.
+nennen; neue Komponenten oder Tokens bleiben unbelegt bzw. `Recommended`.
+
+## Installationsprüfung
+
+Im Designrepository prüft `node scripts/test-validation.mjs` auch eine echte
+Kopie des Vier-Skill-Verbands in einem isolierten lokalen Testverzeichnis.
+`node scripts/validate.mjs --skills-root tmp/installed-skills` kann einen anderen
+kopierten Verband innerhalb dieses Arbeitsbereichs prüfen. Fehlende Shared-
+Referenzen, falsche Skillnamen und zu breite Ignore-Regeln müssen fehlschlagen.
+
+Das Quellenregister der historischen Baseline behält seine Referenzversion 0.1.1;
+die Paketversion 0.2.0 in `skills.json` versioniert die vier Skills und ihre
+neuen Empfehlungen. Die Tokenwerte der Baseline werden dadurch nicht verändert.
+Die Quelldateien externer Recherchen gehören nicht zur Installation.

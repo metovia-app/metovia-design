@@ -1,0 +1,6 @@
+{
+  "version": "0.2.0",
+  "skills": ["metovia-design", "metovia-ui-review", "metovia-motion", "metovia-landing"],
+  "sharedDirectory": "_shared",
+  "installation": "Copy all four skill folders and _shared together; each skill can be invoked independently."
+}
