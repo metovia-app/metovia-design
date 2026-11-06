@@ -1,5 +1,9 @@
 # Prüfung der öffentlichen Dokumentation
 
+Historischer Bericht zur Erstbereinigung von Version 0.1.1. Die Erweiterung auf
+vier Skills ist im [aktuellen Szenario- und Prüfbericht](skill-evaluation.md)
+dokumentiert; die folgenden Bestandszahlen beziehen sich auf die Erstbereinigung.
+
 Stand: **06.11.2026**. Geprüft wurden ausschließlich Dateien und Git-Metadaten
 des Designrepositorys sowie dessen erreichbare öffentliche GitHub-Metadaten.
 Andere Repositorys wurden für diese Bereinigung weder gelesen noch verändert.

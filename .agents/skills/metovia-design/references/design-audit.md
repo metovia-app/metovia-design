@@ -74,7 +74,7 @@ Belege: [S33–S36](sources.md#s33).
 
 ## Gefundene Inkonsistenzen und Risiken
 
-Die Befunde sind `Current`; die zugehörigen Lösungen bleiben `Proposed`.
+Die Befunde sind `Current`; die zugehörigen Lösungen bleiben `Recommended`.
 Bewusste Unterschiede zwischen Magazin und CMS sind ausdrücklich kein Fehler.
 
 | ID | Belegter Ist-Befund | Auswirkung / Grenze | Empfehlung |
